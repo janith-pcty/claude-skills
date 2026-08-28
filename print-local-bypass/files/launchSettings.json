@@ -1,0 +1,74 @@
+{
+  "profiles": {
+    "Kestrel": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "databases_app_runtime_user1_connectionstring_endpoint": "localhost",
+        "databases_app_runtime_user1_connectionstring_username": "postgres",
+        "databases_app_runtime_user1_connectionstring_password": "postgres",
+        "databases_app_runtime_user2_connectionstring_endpoint": "localhost",
+        "databases_app_runtime_user2_connectionstring_username": "postgres",
+        "databases_app_runtime_user2_connectionstring_password": "postgres",
+        "databases_app_admin_connectionstring_endpoint": "localhost",
+        "databases_app_admin_connectionstring_username": "postgres",
+        "databases_app_admin_connectionstring_password": "postgres",
+        "idp_authority_url": "https://tinprovider.qa.paylocity.com",
+        "idp_local_issuer": "localhost",
+        "idp_local_secret_key": "<REDACTED>",
+        "pdf_core_api_base_url": "https://localhost:55273",
+        "pdf_core_ping_url": "/documents/v1/pdf?type=merge&_ping=true",
+        "idp_client_id": "<REDACTED>",
+        "idp_client_secret": "<REDACTED>",
+        "gateway_api_key": "<REDACTED>",
+        "security_resource_api_url": "https://tingw.qa.paylocity.com",
+        "cdn_url": "https://cdn.paylocity.com",
+        "gateway_url": "https://localhost:55274",
+        "address_api_base_url": "https://tingw.qa.paylocity.com/AddressApi",
+        "address_api_use_stub": "true",
+        "shipment_page_limit_default": "2500"
+      },
+      "applicationUrl": "https://localhost:55274",
+      "launchUrl": "swagger"
+    },
+    "Local IIS": {
+      "commandName": "IIS",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "databases_app_runtime_user1_connectionstring_endpoint": "localhost",
+        "databases_app_runtime_user1_connectionstring_username": "postgres",
+        "databases_app_runtime_user1_connectionstring_password": "postgres",
+        "databases_app_runtime_user2_connectionstring_endpoint": "localhost",
+        "databases_app_runtime_user2_connectionstring_username": "postgres",
+        "databases_app_runtime_user2_connectionstring_password": "postgres",
+        "databases_app_admin_connectionstring_endpoint": "localhost",
+        "databases_app_admin_connectionstring_username": "postgres",
+        "databases_app_admin_connectionstring_password": "postgres",
+        "idp_authority_url": "https://tinprovider.qa.paylocity.com",
+        "idp_local_issuer": "localhost",
+        "idp_local_secret_key": "<REDACTED>",
+        "pdf_core_api_base_url": "https://localhost:55273",
+        "pdf_core_ping_url": "/documents/v1/pdf?type=merge&_ping=true",
+        "idp_client_id": "<REDACTED>",
+        "idp_client_secret": "<REDACTED>",
+        "gateway_api_key": "<REDACTED>",
+        "security_resource_api_url": "https://tingw.qa.paylocity.com",
+        "cdn_url": "https://cdn.paylocity.com",
+        "gateway_url": "https://localhost:55274",
+        "address_api_base_url": "https://tingw.qa.paylocity.com/AddressApi",
+        "shipment_page_limit_default": "2500"
+      },
+      "launchUrl": "swagger"
+    }
+  },
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/DistributionPrintPlatformApi",
+      "sslPort": 0
+    }
+  }
+}
